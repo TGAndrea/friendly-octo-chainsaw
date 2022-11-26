@@ -1,0 +1,67 @@
+$colorWhite: #fff;
+$colorNavy: rgb(76, 76, 103);
+@import "./portfolio";
+@import "./medbuttons";
+
+
+.container{
+    font-family: sans-serif;
+    background-color: #c3cfe2;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    background-color: $colorWhite;
+    border: 2px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 8px 0px rgb(130, 129, 129);
+    width: 500px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+p{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 50px;
+    color: rgb(63, 62, 62);
+    text-align: left;
+    margin: 30px;
+    padding: 15px;
+}
+
+#portrait{
+    display: block;
+    margin: auto;
+    width: 150px; 
+    height: 150px;
+    border: 5px solid $colorWhite;
+    border-radius: 100%;
+    object-position: center;
+    transform: translateY(75px);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    background-color: #686de0;
+    text-align: center;
+}
+
+.footer h2{
+    text-transform: uppercase;
+    color: $colorWhite;
+    transform: translateY(70px);
+}
+
+.footer h3{
+    color: #c3cfe2;
+    transform: translateY(45px);
+}
+
+
+
+
+

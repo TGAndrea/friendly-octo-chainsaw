@@ -1,0 +1,81 @@
+@mixin text {
+    display: inline-block;
+    padding: 0px 40px 0px 0px;
+    margin: 0px 40px 0px 20px;
+    color: $colorWhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    text-decoration: underline;
+    text-align: center;
+}
+@mixin slide {
+    animation: moveToLeft 1.3s ease-in-out both;
+}
+
+
+.medbuttons{
+    list-style-type: none;
+    position: absolute;
+    right: -240px;
+    float: right;
+}
+
+.fa-laptop-code{
+    color: $colorWhite;
+    background-color: #e17b77;
+    padding-left: 10px;
+    p{
+        @include text();
+    }
+}
+
+
+.fa-twitter{
+    color:$colorWhite;
+    background-color: #00aced;
+    padding-left: 10px;
+    p{
+        @include text();
+    }
+}
+
+
+.fa-linkedin-in{
+    color: $colorWhite;
+    background-color: #007bb6;
+    padding-left: 10px;
+    p{
+        @include text();
+    }
+}
+
+.fa-facebook-f{
+    color: $colorWhite;
+    background-color: #3b5998;
+    padding-left: 10px;
+    p{
+        @include text();
+    }
+}
+
+.fa-github{
+    color: $colorWhite;
+    background-color: #333;
+    padding-left: 10px;
+    p{
+        @include text();
+    }
+}
+
+.fa-laptop-code:hover,
+.fa-twitter:hover,
+.fa-linkedin-in:hover,
+.fa-facebook-f:hover,
+.fa-github:hover{
+    @include slide();
+}
+
+@keyframes moveToLeft{
+    0%{ transform: translateX(0px); }
+    100%{ transform: translateX(-200px); }
+}
